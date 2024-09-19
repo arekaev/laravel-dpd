@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SergeevPasha\DPD\Helpers;
+namespace Arekaev\DPD\Helpers;
 
 class DPDHelper
 {

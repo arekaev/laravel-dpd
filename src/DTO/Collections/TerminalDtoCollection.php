@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SergeevPasha\DPD\DTO\Collections;
+namespace Arekaev\DPD\DTO\Collections;
 
 use Illuminate\Support\Collection;
-use SergeevPasha\DPD\DTO\TerminalDto;
+use Arekaev\DPD\DTO\TerminalDto;
 
 class TerminalDtoCollection extends Collection
 {

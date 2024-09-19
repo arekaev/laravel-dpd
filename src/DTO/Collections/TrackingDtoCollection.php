@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SergeevPasha\DPD\DTO\Collections;
+namespace Arekaev\DPD\DTO\Collections;
 
 use Illuminate\Support\Collection;
-use SergeevPasha\DPD\DTO\TrackingDto;
+use Arekaev\DPD\DTO\TrackingDto;
 
 class TrackingDtoCollection extends Collection
 {

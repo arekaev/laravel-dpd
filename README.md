@@ -1,6 +1,6 @@
-[![Maintainability](https://api.codeclimate.com/v1/badges/52ea85ccfbc7d77dee10/maintainability)](https://codeclimate.com/github/sergeevpasha/laravel-dpd/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/52ea85ccfbc7d77dee10/test_coverage)](https://codeclimate.com/github/sergeevpasha/laravel-dpd/test_coverage)
-[![CodeFactor](https://www.codefactor.io/repository/github/sergeevpasha/laravel-dpd/badge)](https://www.codefactor.io/repository/github/sergeevpasha/laravel-dpd)
+[![Maintainability](https://api.codeclimate.com/v1/badges/52ea85ccfbc7d77dee10/maintainability)](https://codeclimate.com/github/Arekaev/laravel-dpd/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/52ea85ccfbc7d77dee10/test_coverage)](https://codeclimate.com/github/Arekaev/laravel-dpd/test_coverage)
+[![CodeFactor](https://www.codefactor.io/repository/github/Arekaev/laravel-dpd/badge)](https://www.codefactor.io/repository/github/Arekaev/laravel-dpd)
 [![Generic badge](https://img.shields.io/badge/PHP-^8.0.0-blue.svg)](https://www.php.net)
 [![Generic badge](https://img.shields.io/badge/Laravel-^8.40.0-red.svg)](https://laravel.com)
 
@@ -25,7 +25,7 @@ Key can be obtained in your cabinet at https://www.dpd.ru/ols/order/personal/int
 
 ## Installation
 
-<pre>composer require sergeevpasha/laravel-dpd</pre>
+<pre>composer require arekaev/laravel-dpd</pre>
 
 ## Configuration
 
@@ -40,14 +40,14 @@ This package has a few configuration values:
 </pre>
 
 <pre>
-php artisan vendor:publish --provider="SergeevPasha\DPD\Providers\DPDServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Arekaev\DPD\Providers\DPDServiceProvider" --tag="config"
 </pre>
 
 After installing, you may just import the client
-<pre>use SergeevPasha\DPD\Libraries\DPDClient;</pre>
+<pre>use Arekaev\DPD\Libraries\DPDClient;</pre>
 
 <pre>
-/* 
+/*
     You may find your User ID by entering DPD Cabinet.
     Here we are initializing the client.
 */
@@ -59,7 +59,7 @@ Now we can use these methods:
 <pre>
 $client->getCountryCities(string $country)
 $client->getTerminals()
-$client->findByTrackNumber(string $trackNumber)  
+$client->findByTrackNumber(string $trackNumber)
 /* This one requires a Delivery Object, see next to see how to build it */
 $client->getPrice(Delivery $delivery)
 </pre>

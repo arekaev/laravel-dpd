@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SergeevPasha\DPD\Tests\Unit;
+namespace Arekaev\DPD\Tests\Unit;
 
-use SergeevPasha\DPD\Tests\TestCase;
-use SergeevPasha\DPD\Helpers\DPDHelper;
+use Arekaev\DPD\Tests\TestCase;
+use Arekaev\DPD\Helpers\DPDHelper;
 
 class HelpersTest extends TestCase
 {

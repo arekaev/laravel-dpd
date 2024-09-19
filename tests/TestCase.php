@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SergeevPasha\DPD\Tests;
+namespace Arekaev\DPD\Tests;
 
 use Orchestra\Testbench\TestCase as BaseTestCase;
 

@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace SergeevPasha\DPD\Libraries;
+namespace Arekaev\DPD\Libraries;
 
-use SergeevPasha\DPD\DTO\CityDto;
-use SergeevPasha\DPD\DTO\DeliveryDto;
-use SergeevPasha\DPD\DTO\TerminalDto;
-use SergeevPasha\DPD\DTO\TrackingDto;
-use SergeevPasha\DPD\Helpers\DPDHelper;
-use SergeevPasha\DPD\DTO\DeliveryPriceOptionDto;
-use SergeevPasha\DPD\DTO\Collections\CityDtoCollection;
-use SergeevPasha\DPD\DTO\Collections\TerminalDtoCollection;
-use SergeevPasha\DPD\DTO\Collections\DeliveryPriceOptionDtoCollection;
+use Arekaev\DPD\DTO\CityDto;
+use Arekaev\DPD\DTO\DeliveryDto;
+use Arekaev\DPD\DTO\TerminalDto;
+use Arekaev\DPD\DTO\TrackingDto;
+use Arekaev\DPD\Helpers\DPDHelper;
+use Arekaev\DPD\DTO\DeliveryPriceOptionDto;
+use Arekaev\DPD\DTO\Collections\CityDtoCollection;
+use Arekaev\DPD\DTO\Collections\TerminalDtoCollection;
+use Arekaev\DPD\DTO\Collections\DeliveryPriceOptionDtoCollection;
 
 class DPDClient
 {
@@ -35,7 +35,7 @@ class DPDClient
      *
      * @throws \SoapFault
      * @throws \Spatie\DataTransferObject\Exceptions\UnknownProperties
-     * @return \SergeevPasha\DPD\DTO\Collections\CityDtoCollection
+     * @return \Arekaev\DPD\DTO\Collections\CityDtoCollection
      */
     public function getCountryCities(string $country): CityDtoCollection
     {
@@ -56,7 +56,7 @@ class DPDClient
     /**
      * @throws \SoapFault
      * @throws \Spatie\DataTransferObject\Exceptions\UnknownProperties
-     * @return \SergeevPasha\DPD\DTO\Collections\TerminalDtoCollection
+     * @return \Arekaev\DPD\DTO\Collections\TerminalDtoCollection
      */
     public function getTerminals(): TerminalDtoCollection
     {
@@ -79,11 +79,11 @@ class DPDClient
     }
 
     /**
-     * @param \SergeevPasha\DPD\DTO\DeliveryDto $delivery
+     * @param \Arekaev\DPD\DTO\DeliveryDto $delivery
      *
      * @throws \SoapFault
      * @throws \Spatie\DataTransferObject\Exceptions\UnknownProperties
-     * @return \SergeevPasha\DPD\DTO\Collections\DeliveryPriceOptionDtoCollection
+     * @return \Arekaev\DPD\DTO\Collections\DeliveryPriceOptionDtoCollection
      */
     public function getPrice(DeliveryDto $delivery): DeliveryPriceOptionDtoCollection
     {
@@ -126,7 +126,7 @@ class DPDClient
      *
      * @throws \SoapFault
      * @throws \Spatie\DataTransferObject\Exceptions\UnknownProperties
-     * @return \SergeevPasha\DPD\DTO\TrackingDto
+     * @return \Arekaev\DPD\DTO\TrackingDto
      */
     public function findByTrackNumber(string $trackNumber): TrackingDto
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace SergeevPasha\DPD\DTO;
+namespace Arekaev\DPD\DTO;
 
 use Spatie\DataTransferObject\DataTransferObject;
 use Spatie\DataTransferObject\Attributes\MapFrom;

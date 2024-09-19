@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace SergeevPasha\DPD\Libraries;
+namespace Arekaev\DPD\Libraries;
 
 use SoapClient;
 

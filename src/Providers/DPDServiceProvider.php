@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace SergeevPasha\DPD\Providers;
+namespace Arekaev\DPD\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use SergeevPasha\DPD\Libraries\DPDClient;
+use Arekaev\DPD\Libraries\DPDClient;
 
 class DPDServiceProvider extends ServiceProvider
 {

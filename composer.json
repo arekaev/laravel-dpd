@@ -1,5 +1,5 @@
 {
-    "name": "sergeevpasha/laravel-dpd",
+    "name": "Arekaev/laravel-dpd",
     "description": "Tiny DPD API wrapper for Laravel",
     "keywords": ["dpd", "laravel"],
     "type": "library",
@@ -7,8 +7,8 @@
     "authors": [
         {
             "name": "Sergeev Pavel",
-            "email": "sergeevpasha90@gmail.com",
-            "homepage": "https://github.com/sergeevpasha"
+            "email": "Arekaev90@gmail.com",
+            "homepage": "https://github.com/Arekaev"
         }
     ],
     "minimum-stability": "stable",
@@ -29,18 +29,18 @@
     },
     "autoload": {
         "psr-4": {
-            "SergeevPasha\\DPD\\": "src/"
+            "Arekaev\\DPD\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "SergeevPasha\\DPD\\Tests\\": "tests/"
+            "Arekaev\\DPD\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "SergeevPasha\\DPD\\Providers\\DPDServiceProvider"
+                "Arekaev\\DPD\\Providers\\DPDServiceProvider"
             ]
         },
         "branch-alias": {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace SergeevPasha\DPD\DTO\Collections;
+namespace Arekaev\DPD\DTO\Collections;
 
-use SergeevPasha\DPD\DTO\CityDto;
+use Arekaev\DPD\DTO\CityDto;
 use Illuminate\Support\Collection;
 
 class CityDtoCollection extends Collection
