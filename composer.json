@@ -1,14 +1,14 @@
 {
-    "name": "Arekaev/laravel-dpd",
-    "description": "Tiny DPD API wrapper for Laravel",
+    "name": "arekaev/laravel-dpd",
+    "description": "DPD API wrapper for Laravel (fork https://github.com/sergeevpasha/laravel-dpd)",
     "keywords": ["dpd", "laravel"],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Sergeev Pavel",
-            "email": "Arekaev90@gmail.com",
-            "homepage": "https://github.com/Arekaev"
+            "name": "Arekaev Aleksey",
+            "email": "php.nginx@gmail.com",
+            "homepage": "https://github.com/arekaev"
         }
     ],
     "minimum-stability": "stable",
