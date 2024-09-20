@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Arekaev\DPD\DTO;
 
 use Spatie\LaravelData\Data;
-//use Spatie\DataTransferObject\Attributes\MapFrom;
+use Spatie\LaravelData\Attributes\MapName;
 
 class TerminalDto extends Data
 {

@@ -3,7 +3,7 @@
 namespace Arekaev\DPD\DTO;
 
 use Spatie\LaravelData\Data;
-//use Spatie\DataTransferObject\Attributes\MapFrom;
+use Spatie\LaravelData\Attributes\MapName;
 
 class DeliveryPriceOptionDto extends Data
 {
