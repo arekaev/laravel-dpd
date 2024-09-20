@@ -2,10 +2,10 @@
 
 namespace Arekaev\DPD\DTO;
 
-use Spatie\DataTransferObject\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\MapFrom;
+use Spatie\LaravelData\Data;
+//use Spatie\DataTransferObject\Attributes\MapFrom;
 
-class DeliveryPriceOptionDto extends DataTransferObject
+class DeliveryPriceOptionDto extends Data
 {
 
     #[MapFrom('serviceCode')]

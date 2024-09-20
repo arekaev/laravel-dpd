@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Arekaev\DPD\DTO;
 
-use Spatie\DataTransferObject\DataTransferObject;
-use Spatie\DataTransferObject\Attributes\MapFrom;
+use Spatie\LaravelData\Data;
+//use Spatie\DataTransferObject\Attributes\MapFrom;
 
-class CityDto extends DataTransferObject
+class CityDto extends Data
 {
     #[MapFrom('cityName')]
     public string $name;

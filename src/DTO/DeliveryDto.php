@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Arekaev\DPD\DTO;
 
-use Spatie\DataTransferObject\DataTransferObject;
+use Spatie\LaravelData\Data;
 
-class DeliveryDto extends DataTransferObject
+class DeliveryDto extends Data
 {
     /**
      * @var int
