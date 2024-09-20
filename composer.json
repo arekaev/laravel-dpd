@@ -16,14 +16,13 @@
         "php": "^8.2",
         "laravel/framework": " ^11.0",
         "guzzlehttp/guzzle": "^7.2",
-        "bensampo/laravel-enum": ">=3.0 <=6.0",
-        "spatie/data-transfer-object": "^3.7",
         "ext-soap": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "bensampo/laravel-enum": "^6.11",
+        "spatie/laravel-data": "^4.9"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.2",
-        "orchestra/testbench": "^6.0",
         "squizlabs/php_codesniffer": "dev-master",
         "phpstan/phpstan": "^0.12.32"
     },
