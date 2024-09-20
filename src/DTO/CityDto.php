@@ -9,30 +9,30 @@ use Spatie\LaravelData\Data;
 
 class CityDto extends Data
 {
-    #[MapFrom('cityName')]
+    #[MapName('cityName')]
     public string $name;
 
-    #[MapFrom('cityCode')]
+    #[MapName('cityCode')]
     public string $code;
 
-    #[MapFrom('cityId')]
+    #[MapName('cityId')]
     public string $cityId;
 
-    #[MapFrom('countryCode')]
+    #[MapName('countryCode')]
     public string $countryCode;
 
-    #[MapFrom('regionCode')]
+    #[MapName('regionCode')]
     public string $regionCode;
 
-    #[MapFrom('regionName')]
+    #[MapName('regionName')]
     public string $regionName;
 
-    #[MapFrom('abbreviation')]
+    #[MapName('abbreviation')]
     public string $abbreviation;
 
-    #[MapFrom('indexMin')]
+    #[MapName('indexMin')]
     public string|null $indexMin;
 
-    #[MapFrom('indexMax')]
+    #[MapName('indexMax')]
     public string|null $indexMax;
 }

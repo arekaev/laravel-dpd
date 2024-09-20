@@ -9,54 +9,54 @@ use Spatie\LaravelData\Data;
 
 class TerminalDto extends Data
 {
-    #[MapFrom('terminalName')]
+    #[MapName('terminalName')]
     public string $name;
 
-    #[MapFrom('terminalCode')]
+    #[MapName('terminalCode')]
     public string $code;
 
-    #[MapFrom('address.countryCode')]
+    #[MapName('address.countryCode')]
     public string $countryCode;
 
-    #[MapFrom('address.regionCode')]
+    #[MapName('address.regionCode')]
     public string $regionCode;
 
-    #[MapFrom('address.regionName')]
+    #[MapName('address.regionName')]
     public string $regionName;
 
-    #[MapFrom('address.cityId')]
+    #[MapName('address.cityId')]
     public string $cityId;
 
-    #[MapFrom('address.cityCode')]
+    #[MapName('address.cityCode')]
     public string $cityCode;
 
-    #[MapFrom('address.cityName')]
+    #[MapName('address.cityName')]
     public string $cityName;
 
-    #[MapFrom('address.index')]
+    #[MapName('address.index')]
     public string $index;
 
-    #[MapFrom('address.street')]
+    #[MapName('address.street')]
     public string|null $street;
 
-    #[MapFrom('address.streetAbbr')]
+    #[MapName('address.streetAbbr')]
     public string|null $streetAbbr;
 
-    #[MapFrom('address.houseNo')]
+    #[MapName('address.houseNo')]
     public string|null $house;
 
-    #[MapFrom('address.structure')]
+    #[MapName('address.structure')]
     public string|null $structure;
 
-    #[MapFrom('address.ownership')]
+    #[MapName('address.ownership')]
     public string|null $ownership;
 
-    #[MapFrom('address.descript')]
+    #[MapName('address.descript')]
     public string|null $description;
 
-    #[MapFrom('geoCoordinates.latitude')]
+    #[MapName('geoCoordinates.latitude')]
     public float|null $latitude;
 
-    #[MapFrom('geoCoordinates.longitude')]
+    #[MapName('geoCoordinates.longitude')]
     public float|null $longitude;
 }

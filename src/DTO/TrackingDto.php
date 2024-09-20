@@ -9,72 +9,72 @@ use Spatie\LaravelData\Data;
 
 class TrackingDto extends Data
 {
-    #[MapFrom('clientOrderNr')]
+    #[MapName('clientOrderNr')]
     public string $clientOrderNumber;
 
-    #[MapFrom('dpdOrderNr')]
+    #[MapName('dpdOrderNr')]
     public string $trackNumber;
 
-    #[MapFrom('dpdParcelNr')]
+    #[MapName('dpdParcelNr')]
     public string $parcelNumber;
 
-    #[MapFrom('pickupDate')]
+    #[MapName('pickupDate')]
     public string $pickupDate;
 
-    #[MapFrom('planDeliveryDate')]
+    #[MapName('planDeliveryDate')]
     public string $planDeliveryDate;
 
-    #[MapFrom('orderPhysicalWeight')]
+    #[MapName('orderPhysicalWeight')]
     public string $orderPhysicalWeight;
 
-    #[MapFrom('orderVolume')]
+    #[MapName('orderVolume')]
     public string $orderVolume;
 
-    #[MapFrom('orderVolumeWeight')]
+    #[MapName('orderVolumeWeight')]
     public string $orderVolumeWeight;
 
-    #[MapFrom('orderPayWeight')]
+    #[MapName('orderPayWeight')]
     public string $orderPayWeight;
 
-    #[MapFrom('orderCost')]
+    #[MapName('orderCost')]
     public string $orderCost;
 
-    #[MapFrom('parcelPhysicalWeight')]
+    #[MapName('parcelPhysicalWeight')]
     public string $parcelPhysicalWeight;
 
-    #[MapFrom('parcelVolume')]
+    #[MapName('parcelVolume')]
     public string $parcelVolume;
 
-    #[MapFrom('parcelVolumeWeight')]
+    #[MapName('parcelVolumeWeight')]
     public string $parcelVolumeWeight;
 
-    #[MapFrom('parcelPayWeight')]
+    #[MapName('parcelPayWeight')]
     public string $parcelPayWeight;
 
-    #[MapFrom('parcelLength')]
+    #[MapName('parcelLength')]
     public string $parcelLength;
 
-    #[MapFrom('parcelWidth')]
+    #[MapName('parcelWidth')]
     public string $parcelWidth;
 
-    #[MapFrom('parcelHeight')]
+    #[MapName('parcelHeight')]
     public string $parcelHeight;
 
-    #[MapFrom('newState')]
+    #[MapName('newState')]
     public string $status;
 
-    #[MapFrom('stateTranslated')]
+    #[MapName('stateTranslated')]
     public string $translatedStatus;
 
-    #[MapFrom('transitionTime')]
+    #[MapName('transitionTime')]
     public string $transitionTime;
 
-    #[MapFrom('terminalCode')]
+    #[MapName('terminalCode')]
     public string $terminalCode;
 
-    #[MapFrom('terminalCity')]
+    #[MapName('terminalCity')]
     public string $terminalCity;
 
-    #[MapFrom('consignee')]
+    #[MapName('consignee')]
     public string $consignee;
 }

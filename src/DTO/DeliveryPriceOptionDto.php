@@ -8,15 +8,15 @@ use Spatie\LaravelData\Data;
 class DeliveryPriceOptionDto extends Data
 {
 
-    #[MapFrom('serviceCode')]
+    #[MapName('serviceCode')]
     public string $serviceCode;
 
-    #[MapFrom('serviceName')]
+    #[MapName('serviceName')]
     public string $serviceName;
 
-    #[MapFrom('cost')]
+    #[MapName('cost')]
     public string $cost;
 
-    #[MapFrom('days')]
+    #[MapName('days')]
     public string $days;
 }
