@@ -5,58 +5,58 @@ declare(strict_types=1);
 namespace Arekaev\DPD\DTO;
 
 use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Attributes\MapName;
+use Spatie\LaravelData\Attributes\MapInputName;
 
 class TerminalDto extends Data
 {
-    #[MapName('terminalName')]
+    #[MapInputName('terminalName')]
     public string $name;
 
-    #[MapName('terminalCode')]
+    #[MapInputName('terminalCode')]
     public string $code;
 
-    #[MapName('address.countryCode')]
+    #[MapInputName('address.countryCode')]
     public string $countryCode;
 
-    #[MapName('address.regionCode')]
+    #[MapInputName('address.regionCode')]
     public string $regionCode;
 
-    #[MapName('address.regionName')]
+    #[MapInputName('address.regionName')]
     public string $regionName;
 
-    #[MapName('address.cityId')]
+    #[MapInputName('address.cityId')]
     public string $cityId;
 
-    #[MapName('address.cityCode')]
+    #[MapInputName('address.cityCode')]
     public string $cityCode;
 
-    #[MapName('address.cityName')]
+    #[MapInputName('address.cityName')]
     public string $cityName;
 
-    #[MapName('address.index')]
+    #[MapInputName('address.index')]
     public string $index;
 
-    #[MapName('address.street')]
+    #[MapInputName('address.street')]
     public string|null $street;
 
-    #[MapName('address.streetAbbr')]
+    #[MapInputName('address.streetAbbr')]
     public string|null $streetAbbr;
 
-    #[MapName('address.houseNo')]
+    #[MapInputName('address.houseNo')]
     public string|null $house;
 
-    #[MapName('address.structure')]
+    #[MapInputName('address.structure')]
     public string|null $structure;
 
-    #[MapName('address.ownership')]
+    #[MapInputName('address.ownership')]
     public string|null $ownership;
 
-    #[MapName('address.descript')]
+    #[MapInputName('address.descript')]
     public string|null $description;
 
-    #[MapName('geoCoordinates.latitude')]
+    #[MapInputName('geoCoordinates.latitude')]
     public float|null $latitude;
 
-    #[MapName('geoCoordinates.longitude')]
+    #[MapInputName('geoCoordinates.longitude')]
     public float|null $longitude;
 }

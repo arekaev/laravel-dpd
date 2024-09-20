@@ -5,34 +5,34 @@ declare(strict_types=1);
 namespace Arekaev\DPD\DTO;
 
 use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Attributes\MapName;
+use Spatie\LaravelData\Attributes\MapInputName;
 
 class CityDto extends Data
 {
-    #[MapName('cityName')]
+    #[MapInputName('cityName')]
     public string $name;
 
-    #[MapName('cityCode')]
+    #[MapInputName('cityCode')]
     public string $code;
 
-    #[MapName('cityId')]
+    #[MapInputName('cityId')]
     public string $cityId;
 
-    #[MapName('countryCode')]
+    #[MapInputName('countryCode')]
     public string $countryCode;
 
-    #[MapName('regionCode')]
+    #[MapInputName('regionCode')]
     public string $regionCode;
 
-    #[MapName('regionName')]
+    #[MapInputName('regionName')]
     public string $regionName;
 
-    #[MapName('abbreviation')]
+    #[MapInputName('abbreviation')]
     public string $abbreviation;
 
-    #[MapName('indexMin')]
+    #[MapInputName('indexMin')]
     public string|null $indexMin;
 
-    #[MapName('indexMax')]
+    #[MapInputName('indexMax')]
     public string|null $indexMax;
 }

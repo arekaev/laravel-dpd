@@ -5,76 +5,76 @@ declare(strict_types=1);
 namespace Arekaev\DPD\DTO;
 
 use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Attributes\MapName;
+use Spatie\LaravelData\Attributes\MapInputName;
 
 class TrackingDto extends Data
 {
-    #[MapName('clientOrderNr')]
+    #[MapInputName('clientOrderNr')]
     public string $clientOrderNumber;
 
-    #[MapName('dpdOrderNr')]
+    #[MapInputName('dpdOrderNr')]
     public string $trackNumber;
 
-    #[MapName('dpdParcelNr')]
+    #[MapInputName('dpdParcelNr')]
     public string $parcelNumber;
 
-    #[MapName('pickupDate')]
+    #[MapInputName('pickupDate')]
     public string $pickupDate;
 
-    #[MapName('planDeliveryDate')]
+    #[MapInputName('planDeliveryDate')]
     public string $planDeliveryDate;
 
-    #[MapName('orderPhysicalWeight')]
+    #[MapInputName('orderPhysicalWeight')]
     public string $orderPhysicalWeight;
 
-    #[MapName('orderVolume')]
+    #[MapInputName('orderVolume')]
     public string $orderVolume;
 
-    #[MapName('orderVolumeWeight')]
+    #[MapInputName('orderVolumeWeight')]
     public string $orderVolumeWeight;
 
-    #[MapName('orderPayWeight')]
+    #[MapInputName('orderPayWeight')]
     public string $orderPayWeight;
 
-    #[MapName('orderCost')]
+    #[MapInputName('orderCost')]
     public string $orderCost;
 
-    #[MapName('parcelPhysicalWeight')]
+    #[MapInputName('parcelPhysicalWeight')]
     public string $parcelPhysicalWeight;
 
-    #[MapName('parcelVolume')]
+    #[MapInputName('parcelVolume')]
     public string $parcelVolume;
 
-    #[MapName('parcelVolumeWeight')]
+    #[MapInputName('parcelVolumeWeight')]
     public string $parcelVolumeWeight;
 
-    #[MapName('parcelPayWeight')]
+    #[MapInputName('parcelPayWeight')]
     public string $parcelPayWeight;
 
-    #[MapName('parcelLength')]
+    #[MapInputName('parcelLength')]
     public string $parcelLength;
 
-    #[MapName('parcelWidth')]
+    #[MapInputName('parcelWidth')]
     public string $parcelWidth;
 
-    #[MapName('parcelHeight')]
+    #[MapInputName('parcelHeight')]
     public string $parcelHeight;
 
-    #[MapName('newState')]
+    #[MapInputName('newState')]
     public string $status;
 
-    #[MapName('stateTranslated')]
+    #[MapInputName('stateTranslated')]
     public string $translatedStatus;
 
-    #[MapName('transitionTime')]
+    #[MapInputName('transitionTime')]
     public string $transitionTime;
 
-    #[MapName('terminalCode')]
+    #[MapInputName('terminalCode')]
     public string $terminalCode;
 
-    #[MapName('terminalCity')]
+    #[MapInputName('terminalCity')]
     public string $terminalCity;
 
-    #[MapName('consignee')]
+    #[MapInputName('consignee')]
     public string $consignee;
 }

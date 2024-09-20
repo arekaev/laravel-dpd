@@ -3,20 +3,20 @@
 namespace Arekaev\DPD\DTO;
 
 use Spatie\LaravelData\Data;
-use Spatie\LaravelData\Attributes\MapName;
+use Spatie\LaravelData\Attributes\MapInputName;;
 
 class DeliveryPriceOptionDto extends Data
 {
 
-    #[MapName('serviceCode')]
+    #[MapInputName('serviceCode')]
     public string $serviceCode;
 
-    #[MapName('serviceName')]
+    #[MapInputName('serviceName')]
     public string $serviceName;
 
-    #[MapName('cost')]
+    #[MapInputName('cost')]
     public string $cost;
 
-    #[MapName('days')]
+    #[MapInputName('days')]
     public string $days;
 }
